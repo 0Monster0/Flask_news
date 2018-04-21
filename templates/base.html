@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css', _external=True) }}">
+    <title>UC头条</title>
+</head>
+<body>
+<header>
+    <div class="top_box">
+        <h1>UC头条新闻</h1>
+        <a href="#" target="_blank"><canvas width='30' height='30' class='icon_down'></canvas><span>新闻一网通</span></a>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}" class="{% if request.path == '/' %}menu_on{% endif %}">全部</a></li>
+                <li><a href="{{ url_for('news', name='推荐') }}" class="{% if request.path == '/news/推荐/' %}menu_on{% endif %}">推荐</a></li>
+                <li><a href="{{ url_for('news', name='热点') }}" class="{% if request.path == '/news/热点/' %}menu_on{% endif %}">热点</a></li>
+                <li><a href="{{ url_for('news', name='视频') }}" class="{% if request.path == '/news/视频/' %}menu_on{% endif %}">视频</a></li>
+                <li><a href="{{ url_for('news', name='搞笑') }}" class="{% if request.path == '/news/搞笑/' %}menu_on{% endif %}">搞笑</a></li>
+                <li><a href="{{ url_for('news', name='社会') }}" class="{% if request.path == '/news/社会/' %}menu_on{% endif %}">社会</a></li>
+                <li><a href="{{ url_for('news', name='娱乐') }}" class="{% if request.path == '/news/娱乐/' %}menu_on{% endif %}">娱乐</a></li>
+                <li><a href="{{ url_for('news', name='科技') }}" class="{% if request.path == '/news/科技/' %}menu_on{% endif %}">科技</a></li>
+                <li><a href="{{ url_for('news', name='体育') }}" class="{% if request.path == '/news/体育/' %}menu_on{% endif %}">体育</a></li>
+                <li><a href="{{ url_for('news', name='汽车') }}" class="{% if request.path == '/news/汽车/' %}menu_on{% endif %}">汽车</a></li>
+                <li><a href="{{ url_for('news', name='财经') }}" class="{% if request.path == '/news/财经/' %}menu_on{% endif %}">财经</a></li>
+                <li id="menuMore">
+                    <a href="javascript:0;">更多</a>
+                    <div id="menuMorePanel">
+                        <ul>
+                            <li><a href="#">军事</a></li>
+                            <li><a href="#">时尚</a></li>
+                            <li><a href="#">科学探索</a></li>
+                            <li><a href="#">健康</a></li>
+                            <li><a href="#">历史</a></li>
+                            <li><a href="#">国际</a></li>
+                            <li><a href="#">游戏</a></li>
+                            <li><a href="#">育儿</a></li>
+                            <li><a href="#">旅游</a></li>
+                            <li><a href="#">美食</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div id="sideBox"></div>
+    </div>
+</header>
+<main>
+    {% block custom_content %}
+    {% endblock %}
+
+    <aside>
+        <form action="#" id="searchBox">
+            <input type="search" placeholder="搜索你想看的资讯和视频">
+            <canvas width="20" height="20" id="icon_search"></canvas>
+            <input type="submit" hidden>
+        </form>
+        <div class="side_box hot_news">
+            <h4>精彩资讯</h4>
+            <ul>
+                <li>
+                    <h5>中俄就朝鲜半岛问题举行磋商：决不允许半岛生战</h5>
+                    <img src="{{ url_for('static', filename='img/qq9.png', _external=True) }}" alt="精彩推荐">
+                </li>
+                <li>
+                    <h5>中俄就朝鲜半岛问题举行磋商：决不允许半岛生战</h5>
+                    <img src="{{ url_for('static', filename='img/qq9.png', _external=True) }}" alt="精彩推荐">
+                </li>
+                <li>
+                    <h5>中俄就朝鲜半岛问题举行磋商：决不允许半岛生战</h5>
+                    <img src="{{ url_for('static', filename='img/qq9.png', _external=True) }}" alt="精彩推荐">
+                </li>
+                <li>
+                    <h5>中俄就朝鲜半岛问题举行磋商：决不允许半岛生战</h5>
+                    <img src="{{ url_for('static', filename='img/qq9.png', _external=True) }}" alt="精彩推荐">
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <div class="side_box contact" id="erweima">
+                <h4>你的新闻，我的心</h4>
+                <img src="{{ url_for('static', filename='img/qq9.png', _external=True) }}" alt="uc头像下载链接二维码">
+            </div>
+            <div class="side_box friends">
+                <h4>友情链接</h4>
+                <p>飞猪 中国青年网 钉钉 海外网 中青在线 北青网 信报网 封面新闻 铁血军事 阿里健康 苹果助手 海峡网 淮安新闻网 西陆军事 鄂州新闻 华声论坛 台海网 银行信息港 每日财经 军情直播间 武林网 80后励志网 杭州在线 前瞻看点 韶关新闻网 中研网 研究报告 石家庄传媒网 九游苹果游戏 120健康新闻 当代先锋网</p>
+            </div>
+            <div class="side_box about">
+                <h4>关于我们</h4>
+                <p>
+                    UC<a href="#" target="_blank" style="font-weight: bold">头条</a>从兴趣，发现乐趣 <br>
+                </p>
+            </div>
+        </footer>
+    </aside>
+
+</main>
+<script src="{{ url_for('static', filename='js/icon_pait.js', _external=True) }}"></script>
+</body>
+</html>

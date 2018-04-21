@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block custom_content %}
+    <div class="content">
+        <ul>
+            {% for new in news_list %}
+            <li class="news_1">
+                <a href="{{ url_for('detail', pk=new.id) }}">
+                    <h3>{{ new.title }}</h3>
+                    <img src=" {{ new.img_url }} " alt="新闻图">
+                </a>
+                <div class="info"><span class="time">{{ new.create_at }}</span><span>{{ new.author }}</span></div>
+            </li>
+            {% endfor %}
+
+{#            <li class="news_2">#}
+{#                <a href="#">#}
+{#                    <h3>第一集上演“美救英雄”?重磅利好消息: 特力A、浙商证券、洛阳钼业、西部建设</h3>#}
+{#                    <div class="pics">#}
+{#                        <img src="{{ url_for('static', filename='img/q1.jpg', _external=True) }}" alt="新闻中图">#}
+{#                        <img src="{{ url_for('static', filename='img/q2.jpg', _external=True) }}" alt="新闻中图">#}
+{#                        <img src="{{ url_for('static', filename='img/q3.jpg', _external=True) }}" alt="新闻中图">#}
+{#                        <img src="{{ url_for('static', filename='img/q4.jpg', _external=True) }}" alt="新闻中图">#}
+{#                    </div>#}
+{#                </a>#}
+{#                <div class="info"><span class="time">2小时前</span><span>新闻作者</span></div>#}
+{#            </li>#}
+        </ul>
+    </div>
+{% endblock %}

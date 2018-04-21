@@ -1,0 +1,322 @@
+*{  
+    margin: 0;  
+    padding: 0;  
+    font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,Arial,sans-serif;  
+    -webkit-appearance: none;  
+    -moz-appearance: none;  
+    appearance: none;  
+    -webkit-box-sizing: border-box;  
+    -moz-box-sizing: border-box;  
+    box-sizing: border-box;  
+}  
+body{  
+    padding-top: 75px;  
+    color: #333;  
+}  
+a{  
+    text-decoration: none;  
+    color: #333;  
+}  
+a:hover{  
+    color: #406599;  
+}  
+ul{  
+    list-style: none;  
+}  
+h3{  
+    font-weight: normal;  
+}  
+body>header{  
+    position: fixed;  
+    left: 0;  
+    top: 0;  
+    width: 100%;  
+    height: 50px;  
+    background: orange;  
+    z-index: 10;  
+}  
+.top_box{  
+    position: relative;  
+    width: 1140px;  
+    height: 50px;  
+    margin: 0 auto;  
+}  
+.top_box>h1{  
+    font-size: 0;  
+    position: absolute;  
+    left: 0;  
+    bottom: 3px;  
+    width: 102px;  
+    height: 44px;  
+    background: url("img/logo.png") no-repeat;  
+}  
+.top_box>a{  
+    position: absolute;  
+    right: 0;  
+    height: 50px;  
+}  
+.top_box>a:hover{  
+    color: #000;  
+}  
+.top_box>a>span{  
+    display: block;  
+    float: right;  
+    margin-top: 14px;  
+}  
+.top_box>a>.icon_down{  
+    float: left;  
+    margin-top: 10px;  
+}  
+
+.top_box>nav{  
+    position: absolute;  
+    top: 75px;  
+    left: 0;  
+    width: 140px;  
+    padding-right: 20px;  
+}  
+.top_box>nav>ul{  
+    text-align: center;  
+}  
+.top_box>nav>ul>li{  
+    height: 45px;  
+    line-height: 45px;  
+    margin-bottom: 2px;  
+}  
+.top_box>nav>ul>li>a{  
+    display: block;  
+    width: 100%;  
+    height: 100%;  
+    border: 1px solid transparent;  
+    border-radius: 4px;  
+}  
+.top_box>nav>ul>li>a:hover{  
+    background: orange;  
+    color: #000;  
+}  
+
+.top_box>#sideBox{  
+    display: none;  
+    background: #ffffff;  
+    position: absolute;  
+    top: 50px;  
+    right: 0;  
+    width: 260px;  
+    height: 500px;  
+    padding-top: 15px;  
+}  
+.top_box>#sideBox>#searchBox{  
+    margin-bottom: 10px;  
+}  
+.top_box>#sideBox>#erweima{  
+    background: #f5f5f5;  
+    padding: 15px 20px;  
+}  
+.top_box>#sideBox>#erweima img{  
+    width: 100%;  
+}  
+main{  
+    width: 1140px;  
+    height: 2222px;  
+    margin: 0 auto;  
+    padding-left: 140px;  
+}  
+
+.content{  
+    width: 710px;  
+    float: left;  
+}  
+.content>ul>li{  
+    position: relative;  
+    width: 100%;  
+    border-bottom: 1px solid #EEEEEE;  
+}  
+.content img{  
+    width: 170px;  
+    height: 109px;  
+}  
+.content h3{  
+    line-height: 30px;  
+    font-size: 20px;  
+    overflow: hidden;  
+}  
+.content .info{  
+    font-size: 14px;  
+    color: #CCC;  
+}  
+.content .info>span{  
+    margin-right: 10px;  
+}  
+.news_1{  
+    height: 140px;  
+}  
+.news_1>a>h3{  
+    position: absolute;  
+    left: 190px;  
+    top: 20px;  
+    width: 520px;  
+    height: 60px;  
+}  
+.news_1>a>img{  
+    position: absolute;  
+    left: 0;  
+    top: 10px;  
+}  
+.news_1>.info{  
+    position: absolute;  
+    left: 190px;  
+    top: 90px;  
+
+}  
+.news_2{  
+    height: 220px;  
+}  
+.news_2>a>h3{  
+    position: absolute;  
+    left: 0;  
+    top: 10px;  
+    width: 710px;  
+    height: 30px;  
+}  
+.news_2>a>div.pics{  
+    position: absolute;  
+    left: 0;  
+    top: 50px;  
+}  
+.news_2>.info{  
+    position: absolute;  
+    left: 0;  
+    top: 170px;  
+}  
+main>aside{  
+    width: 260px;  
+    float: right;  
+}  
+form{  
+    position: relative;  
+}  
+form>input{  
+    width: 100%;  
+    height: 30px;  
+    border: 1px solid #CCC;  
+    padding-left: 8px;  
+}  
+form>input::-webkit-input-placeholder{  
+    font-size: 12px;  
+    color: #A0A0A0;  
+}  
+form>canvas{  
+    position: absolute;  
+    right: 5px;  
+    top: 5px;  
+}  
+main>aside .side_box{  
+    margin-top: 15px;  
+    width: 100%;  
+    background: #F5F5F5;  
+    padding: 15px 20px;  
+}  
+h4{  
+    margin-bottom: 15px;  
+    position: relative;  
+}  
+h4::before{  
+    content: '';  
+    position: absolute;  
+    left: -20px;  
+    top: -2px;  
+    width: 5px;  
+    height: 26px;  
+    background: orange;  
+}  
+main>aside>div.hot_news>ul>li{  
+    width: 100%;  
+    height: 70px;  
+    padding-bottom: 8px;  
+    border-bottom: 1px solid #E0E0E0;  
+}  
+main>aside>div.hot_news>ul>li:last-child{  
+    border-bottom: none;  
+}  
+main>aside>div.hot_news>ul>li>h5{  
+    float: right;  
+    width: 145px;  
+    height: 40px;  
+    overflow: hidden;  
+    line-height: 18px;  
+    margin-top: 18px;  
+    font-size: 12px;  
+    font-weight: normal;  
+
+}  
+main>aside>div.hot_news>ul>li>img{  
+    float: left;  
+    width: 60px;  
+    margin-top: 4px;  
+}  
+main>aside .contact>img{  
+    width: 100%;  
+}  
+main>aside .friends p{  
+    width: 100%;  
+    color: #747474;  
+    font-size: 13px;  
+    word-break: keep-all;  
+    line-height: 25px;  
+}  
+main>aside .about p{  
+    font-size: 14px;  
+}  
+.menu_on{  
+    background: orange;  
+    color: #000;  
+}  
+#menuMore{  
+    position: relative;  
+}  
+#menuMore>#menuMorePanel{  
+    display: none;  
+    position: absolute;  
+    left: 125px;  
+    bottom: 0;  
+    width: 230px;  
+    padding: 10px;  
+    background: #ffffff;  
+    -webkit-box-shadow:  -1px 0 2px 1px rgba(55, 55, 55, 0.1);  
+    box-shadow:  -1px 0 2px 1px rgba(55, 55, 55, 0.1);  
+}  
+#menuMore>#menuMorePanel>ul>li{  
+    float: left;  
+    width: 50%;  
+    height: 45px;  
+    line-height: 45px;  
+    margin-bottom: 10px;  
+}  
+#menuMore>#menuMorePanel>ul>li>a{  
+    display: block;  
+    border-radius: 5px;  
+    width: 100%;  
+    height: 100%;  
+}  
+#menuMore>#menuMorePanel>ul>li>a:hover{  
+    background: orange;  
+    color: #000;  
+}  
+#menuMore>#menuMorePanel>a{  
+    clear: left;  
+    display: block;  
+    width: 100%;  
+    height: 35px;  
+    line-height: 35px;  
+    background: #fefaf0;  
+    font-size: 14px;  
+    border: 2px solid #fff1c3;  
+    padding-left: 10px;  
+}  
+#menuMore>#menuMorePanel>a>canvas{  
+    float: left;  
+}  
+#menuMore>#menuMorePanel>a>span{  
+    float: left;  
+    height: 100%;  
+}
